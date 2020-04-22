@@ -12,5 +12,7 @@ public interface ProjectRepository extends CrudRepository<Project, Long> {
 		
 		return null;
 	}
+	
+	Project findByProjectIdentifier(String projectId);
 
 }
